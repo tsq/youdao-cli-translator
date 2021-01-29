@@ -1,6 +1,8 @@
 # youdao-cli-translator
 
-一个Node.js命令行工具，用于实现中英互译!
+[![CircleCI](https://circleci.com/gh/tsq/youdao-cli-translator/tree/main.svg?style=svg)](https://circleci.com/gh/tsq/youdao-cli-translator/tree/main)
+
+一个Node.js命令行工具，用于实现中英互译! 
 
 ![](./screenshot/usage.png)
 

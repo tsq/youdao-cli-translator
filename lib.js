@@ -6,7 +6,7 @@ const YOUDAO_APP_ID = process.env.YOUDAO_APP_ID;
 const YOUDAO_APP_KEY = process.env.YOUDAO_APP_KEY;
 
 if (!YOUDAO_APP_ID || !YOUDAO_APP_KEY) {
-    console.error('缺少有道APPID和APPKEY，请参考这篇文档进行配置:');
+    console.error('缺少有道APPID和APPKEY，请参考这篇文档进行配置:https://github.com/tsq/youdao-cli-translator');
     process.exit(3);
 }
 
