@@ -1,0 +1,24 @@
+{
+  "name": "youdao-cli-translator",
+  "version": "1.0.0",
+  "description": "一个Node.js命令行工具，用于实现中英互译",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node lib.test.js"
+  },
+  "bin": {
+    "t": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsq/youdao-cli-translator.git"
+  },
+  "keywords": [],
+  "author": "tsq<https://github.com/tsq>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsq/youdao-cli-translator/issues"
+  },
+  "homepage": "https://github.com/tsq/youdao-cli-translator#readme"
+}
