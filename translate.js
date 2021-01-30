@@ -16,7 +16,7 @@ const outputYoudao = body => {
             console.log(chalk('yellow'), '音标:', chalk('green'), `美式:[${usPho}]`);
         } else if (pho && ukPho) {
             console.log(chalk('yellow'), '音标:', chalk('magenta'), `英式:[${ukPho}]`);
-        } else {
+        } else if (pho) {
             console.log(chalk('yellow'), '音标:', chalk('cyan'), `默认:[${pho}]`);
         }
 
