@@ -6,7 +6,8 @@ const colorMap = {
     yellow: 33,
     white: 37,
     blue: 34,
-    red: 31
+    red: 31,
+    gray: 90
 };
 
 module.exports = color => {

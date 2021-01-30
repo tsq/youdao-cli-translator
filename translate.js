@@ -26,15 +26,15 @@ const outputYoudao = body => {
         console.log(chalk('yellow'), '释义:');
 
         basic.explains.forEach((item, index) => {
-            console.log(chalk('white'), `  ${index + 1}`, chalk('cyan'), item);
+            console.log(chalk('white'), `  ${index + 1}.`, chalk('cyan'), item);
         });
     }
     if (body.web) {
         let web = body.web;
         console.log(chalk('yellow'), '其他:');
         web.forEach((item, index) => {
-            console.log(chalk('white'), `  ${index + 1}.`, chalk('blue'), item.key);
-            console.log(chalk('cyan'), '    ' + item.value.toString());
+            console.log(chalk('white'), `  ${index + 1}.`, chalk('gray'), item.key);
+            console.log(chalk('cyan'), '      ' + item.value.toString());
         });
     }
 };

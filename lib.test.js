@@ -17,9 +17,18 @@ async function cn2En() {
     assert.ok(actual === expected);
 }
 
+async function responseBody() {
+    const input = 'hello';
+    const response = await lib(input);
+    assert.ok(response.hasOwnProperty('basic'));
+    assert.ok(response.hasOwnProperty('translation'));
+    assert.ok(response.hasOwnProperty('web'));
+}
+
 async function init() {
     await en2Cn();
     await cn2En();
+    await responseBody();
     console.log('Good job!')
 }
 

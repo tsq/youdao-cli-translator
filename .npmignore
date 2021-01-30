@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+.vscode
+screenshot
+.circleci
+LICENSE
+lib.test.js
+.gitignore
