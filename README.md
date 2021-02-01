@@ -8,16 +8,20 @@
 
 ## 使用须知
 
-该工具的翻译API是基于[有道智云](https://ai.youdao.com/login.s)的文本翻译服务，所以使用前，你自己需要先在有道智云上新建一个应用(参考该文档的[最后部分](#在有道智云上新建一个应用))，获取到应用的ID和KEY，获取到之后，只要将下面两个环境变量添加到操作系统中即可。
+该工具的翻译API是基于[有道智云](https://ai.youdao.com/login.s)的文本翻译服务，所以使用前，你自己需要先在有道智云上新建一个应用(参考该文档的[最后部分](#在有道智云上新建一个应用))，获取到应用的ID和KEY，之后，只要将`YOUDAO_APP_ID`和`YOUDAO_APP_KEY`两个环境变量添加到操作系统中即可。
 
-对于macOS或Linux，可以在`.bashrc`或者`.zshrc`中追加以下两条export语句。
+**对于macOS或Linux** 
+
+可以在`.bashrc`或者`.zshrc`中追加以下两条export语句。
 
 ```sh
 export YOUDAO_APP_ID=应用的ID
 export YOUDAO_APP_KEY=应用的KEY
 ```
 
-对于Window，可以按windows键，在弹出的搜索框中，输入`env`，点击搜索结果中的`Edit the system environment variables`，再点击弹出框底部的`Environment variables`，这时会进入环境变量的编辑对话框，上半部份是当前用户的环境变量，下半部分是所有用户共享的环境变量，这里选择添加到当前用户的环境变量即可，所以点击上半部份的`New`按钮，创建一个新的环境变量。YOUDAO_APP_ID和YOUDAO_APP_KEY这两个环境变量都创建好后，确保点击`Ok`按钮，以便将所有修改都被保留。
+**对于Window**
+
+可以按windows键，在弹出的搜索框中，输入`env`，点击搜索结果中的`Edit the system environment variables`，再点击弹出框底部的`Environment variables`，这时会进入环境变量的编辑对话框，上半部份是当前用户的环境变量，下半部分是所有用户共享的环境变量，这里选择添加到当前用户的环境变量即可，所以点击上半部份的`New`按钮，创建一个新的环境变量。YOUDAO_APP_ID和YOUDAO_APP_KEY这两个环境变量都创建好后，确保点击`Ok`按钮，以便将所有修改都被保留。最后新打开一个`Cmd`的窗口输入`t hello`查看测试结果。
 
 *PS.有道智云会为每位新用户提供100元的免费额度，如果是用于个人日常翻译的话，100元我想可以用一辈子了，我自己用了1年多，目前为止只被扣掉了5毛钱。*
 
