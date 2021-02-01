@@ -1,6 +1,10 @@
 const chalk = require('./utils/chalk');
 const lib = require('./lib');
 
+const outputBaidu = body => {
+    console.log(chalk('gray'), body);
+};
+
 const outputYoudao = body => {
     console.log(chalk('yellow'), '翻译:', chalk('red'), body.translation[0]);
 
@@ -40,6 +44,13 @@ const outputYoudao = body => {
 };
 
 module.exports = async word => {
-    const data = await lib(word);
-    outputYoudao(data);
+    const response = await lib(word);
+    const { data, from } = response;
+    if (from === 'youdao') {
+        outputYoudao(data);
+    } else if (from === 'baidu') {
+        outputBaidu(data);
+    } else {
+        throw('from is unkonwn!');
+    }
 }

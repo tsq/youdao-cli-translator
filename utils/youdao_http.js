@@ -12,7 +12,6 @@ module.exports = data => {
         }
     };
     return new Promise((resolve, reject) => {
-
         const req = https.request(options, res => {
             let body = '';
             res.on('data', d => {

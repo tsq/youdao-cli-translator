@@ -1,14 +1,17 @@
-# youdao-cli-translator
+# youdao-baidu-cli-translator
 
-[![CircleCI](https://circleci.com/gh/tsq/youdao-cli-translator/tree/main.svg?style=shield)](https://circleci.com/gh/tsq/youdao-cli-translator/tree/main)
+[![CircleCI](https://circleci.com/gh/tsq/youdao-cli-translator/tree/baidu.svg?style=shield)](https://circleci.com/gh/tsq/youdao-cli-translator/tree/baidu)
 
 一个Node.js命令行工具，用于实现中英互译! 
+
+**该版本在原有的有道翻译的基础上，增加了百度翻译API，用于支持长句子的翻译**，使用前需要额外添加`BAIDU_APP_ID`和`BAIDU_APP_KEY`这两个环境变量，ID和KEY可以前往百度翻译官网获取： https://api.fanyi.baidu.com 。另外，百度翻译API需要充值，你可以先冲个一块钱用用看。
+
 
 ![](./screenshot/usage.png)
 
 ## 使用须知
 
-该工具的翻译API是基于[有道智云](https://ai.youdao.com/login.s)的文本翻译服务，所以使用前，你自己需要先在有道智云上新建一个应用(参考该文档的[最后部分](#在有道智云上新建一个应用))，获取到应用的ID和KEY，之后，只要将`YOUDAO_APP_ID`和`YOUDAO_APP_KEY`两个环境变量添加到操作系统中即可。
+该工具的翻译API是基于[有道智云](https://ai.youdao.com/login.s)的文本翻译服务，使用前，你自己需要先在有道智云上新建一个应用(参考该文档的[最后部分](#在有道智云上新建一个应用))，获取到应用的ID和KEY，之后，只要将`YOUDAO_APP_ID`和`YOUDAO_APP_KEY`两个环境变量添加到操作系统中即可。
 
 **对于macOS或Linux** 
 
@@ -28,7 +31,7 @@ export YOUDAO_APP_KEY=应用的KEY
 ## 安装
 
 ```sh
-npm i -g youdao-cli-translator
+npm i -g youdao-baidu-cli-translator
 ```
 
 ## 使用方法

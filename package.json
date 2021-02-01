@@ -1,6 +1,6 @@
 {
-  "name": "youdao-cli-translator",
-  "version": "1.0.4",
+  "name": "youdao-baidu-cli-translator",
+  "version": "1.0.0",
   "description": "一个Node.js命令行工具，用于实现中英互译",
   "main": "index.js",
   "scripts": {
