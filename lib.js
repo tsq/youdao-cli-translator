@@ -26,11 +26,17 @@ const run = async q => {
     try {
         const response = await axios(params);
         const data = JSON.parse(response);
-        if (data.errorCode !== '0') {
-            console.error('error happened! here is response json:');
-            console.log(data);
-            console.log('find the reason from: https://ai.youdao.com/docs/doc-trans-api.s#p05')
-            process.exit(4);
+        const errorCode = data.errorCode;
+        if (errorCode !== '0') {
+            if (errorCode === '202') {
+                console.error('抱歉！！！翻译不了。');
+                process.exit(5);
+            } else {
+                console.error('error happened! here is response json:');
+                console.log(data);
+                console.log('find the reason from: https://ai.youdao.com/docs/doc-trans-api.s#p05')
+                process.exit(4);
+            }
         }
         return data;
     } catch (error) {
