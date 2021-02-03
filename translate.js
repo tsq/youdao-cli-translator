@@ -2,7 +2,7 @@ const chalk = require('./utils/chalk');
 const lib = require('./lib');
 
 const outputYoudao = body => {
-    console.log(chalk('yellow'), '翻译:', chalk('red'), body.translation[0]);
+    console.log(`${chalk('yellow')} 翻译:\x1b[0m  ${chalk('red')}%s\x1b[0m`, body.translation[0]);
 
     if (body.basic) {
         let basic = body.basic;
