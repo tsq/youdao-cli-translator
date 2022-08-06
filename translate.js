@@ -34,7 +34,7 @@ const outputYoudao = body => {
         console.log(chalk('yellow'), '其他:');
         web.forEach((item, index) => {
             console.log(chalk('white'), `  ${index + 1}.`, chalk('gray'), item.key);
-            console.log(`${chalk('cyan')}%s\x1b[0m`, '      ' + item.value.toString());
+            console.log(`${chalk('cyan')}%s\x1b[0m`, '      ' + item.value.toString(), chalk('reset'));
         });
     }
 };
